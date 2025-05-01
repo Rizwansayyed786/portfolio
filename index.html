@@ -1,121 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rizwan N Sayyednavar - Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rizwan N Sayyednavar - Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .skills-grid, .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .skills-grid div, .project {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .skills-grid div:hover, .project:hover {
+      transform: translateY(-5px);
+    }
+    .social-links a {
+      margin: 0 10px;
+      font-size: 1.2rem;
+      color: #ecf0f1;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #E74C3C;
+    }
+    .footer {
+      background: #2C3E50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <!-- Dark Mode Toggle -->
-    <div class="dark-mode-toggle">
-        <label>
-            <input type="checkbox" id="darkMode">
-            <span>Dark Mode</span>
-        </label>
+  <!-- Dark Mode Toggle -->
+  <div class="dark-mode-toggle">
+    <label>
+      <input type="checkbox" id="darkMode">
+      <span>Dark Mode</span>
+    </label>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content" data-aos="fade-down">
+      <h1>Rizwan N Sayyednavar</h1>
+      <p>Software Developer | Mobile & Web Solutions | Problem Solver</p>
+      <a href="assets/pdfs/Rizwan-N-Sayyednavar-Resume.pdf" class="btn" download>Download Resume</a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/rizwansayyednavar" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://rizwansayyed786.github.io/portfolio/" target="_blank"><i class="fas fa-globe"></i></a>
+      </div>
     </div>
+  </header>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content" data-aos="fade-down">
-            <h1>Rizwan N Sayyednavar</h1>
-            <p>Software Developer | Innovating with Code</p>
-            <a href="assets/pdfs/Rizwan-N-Sayyednavar-Resume.pdf" class="btn" download>Download Resume</a>
+  <!-- About Section -->
+  <section id="about" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Software Developer with 2+ years of experience building high-quality mobile and web apps. Skilled in Flutter, Laravel, and modern tech stacks. Passionate about clean code, performance optimization, and solving business problems with efficient solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2>Education</h2>
+      <p><strong>KLE Technological University</strong>, BE (CGPA: 8.97)</p>
+      <p>Graduation Year: 2019, Hubli, Karnataka</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div><i class="fas fa-code"></i> Dart, Flutter, PHP (Laravel)</div>
+        <div><i class="fas fa-database"></i> MySQL, Firebase, Firestore</div>
+        <div><i class="fas fa-code"></i> React JS, HTML, CSS, JavaScript</div>
+        <div><i class="fas fa-laptop-code"></i> Python, C++</div>
+        <div><i class="fas fa-cogs"></i> REST APIs, State Management (Provider, Riverpod, MVVM)</div>
+        <div><i class="fas fa-tools"></i> Git, GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2>Experience</h2>
+      <div>
+        <h3>Software Engineer, Chromosis Technologies PVT LTD</h3>
+        <p><em>Jan 2023 - Present | Hubli-Dharwad, India</em></p>
+        <ul>
+          <li>Developed 5+ robust mobile/backend systems with 99% uptime.</li>
+          <li>Integrated Plaid & Firebase in finance/vehicle registration apps with 1,000+ active users.</li>
+          <li>Shipped 4–5 production-ready apps to App Store & Play Store.</li>
+          <li>Boosted multilingual support using Flutter localization in 3+ apps.</li>
+          <li>Mentored juniors, conducted code reviews, and led client communications.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Backend Developer Intern, Quantum IT Innovation</h3>
+        <p><em>Oct 2022 - Dec 2022 | Noida, India</em></p>
+        <ul>
+          <li>Built scalable APIs using Laravel & MySQL for client projects.</li>
+          <li>Optimized SQL queries & database design for improved performance.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        
+        <div class="project" data-aos="zoom-in">
+        <a href="https://play.google.com/store/apps/details?id=com.moneywellth.moneywellthapp&hl=en_IN" target="_blank">
+          <h3>Personal Finance App and Web</h3>
+          <p>Cross-platform app with Plaid integration for transaction tracking and financial planning.</p>
+        </a>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="section" data-aos="fade-up">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Software Developer with expertise in designing and implementing software applications. 
-                Experienced in creating innovative apps and web designs. Seeking to leverage technical 
-                skills and experience to contribute effectively to organizational goals.
-            </p>
+        <div class="project" data-aos="zoom-in">
+          <a href="https://apps.apple.com/gb/app/fernox/id6615081080" target="_blank"> 
+            <h3>Water Quality Testing App and Web</h3>
+            <p>Mobile app supporting 3+ languages for testing and reporting water quality data.</p>
+          </a>
         </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2>Education</h2>
-            <p><strong>KLE Technological University</strong>, BE (CGPA: 8.97)</p>
-            <p>Graduation Year: 2019, Hubli, Karnataka</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section" data-aos="fade-up">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div><i class="fas fa-code"></i> Dart</div>
-                <div><i class="fas fa-code"></i> Python</div>
-                <div><i class="fas fa-database"></i> MySQL</div>
-                <div><i class="fas fa-laptop-code"></i> Flutter</div>
-                <div><i class="fas fa-code"></i> PHP</div>
-                <div><i class="fas fa-cogs"></i> REST APIs</div>
+        <div class="project" data-aos="zoom-in">
+            <a href="https://play.google.com/store/apps/details?id=com.viveapp.app" target="_blank">
+                <h3>Connecting Drivers App and Web</h3>
+                <p>Qr based vehicle registration and chat application and voip calling functionalities to support communication between Drivers</p>
+            </a>
             </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2>Experience</h2>
-            <div>
-                <h3>Chromosis Technologies PVT LTD (Software Engineer)</h3>
-                <p><em>January 2023 - Present | Hubli, India</em></p>
-                <ul>
-                    <li>Built an app and developed a website for managing personal finances, integrating with Plaid for transaction extraction.</li>
-                    <li>Developed features for QR sticker purchases and vehicle registration.</li>
-                    <li>Implemented VoIP calling functionality for iOS applications.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Quantum IT Innovation (Backend Developer Intern)</h3>
-                <p><em>October 2022 - December 2022 | Noida, India</em></p>
-                <ul>
-                    <li>Worked on client projects utilizing the Laravel framework.</li>
-                    <li>Managed and optimized databases to support client needs.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <!-- Certificates Section -->
+  <section id="certificates" class="section bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul>
+        <li><a href="https://www.hackerrank.com/certificates/2888c47e1294" target="_blank">Python (Basic) – HackerRank</a></li>
+        <li><a href="https://www.hackerrank.com/certificates/7ce528fe7226" target="_blank">Problem Solving (Basic) – HackerRank</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/certificate/46JCWXYKXYES" target="_blank">Python Data Structures – Coursera</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/certificate/TBQC29YLD3GX" target="_blank">Unsupervised Machine Learning – IBM/Coursera</a></li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section" data-aos="fade-up">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project" data-aos="zoom-in">
-                    <h3>Personal Finance App</h3>
-                    <p>Expense tracking app integrated with Plaid for transaction extraction.</p>
-                </div>
-                <div class="project" data-aos="zoom-in">
-                    <h3>Water Quality Testing App</h3>
-                    <p>Multi-language support using Flutter localization.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Rizwan N Sayyednavar. All Rights Reserved.</p>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2024 Rizwan N Sayyednavar. All Rights Reserved.</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="js/scripts.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
 </body>
 </html>
