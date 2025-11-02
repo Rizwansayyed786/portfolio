@@ -3,188 +3,484 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rizwan N Sayyednavar - Portfolio</title>
+  <meta name="description" content="Rizwan N Sayyednavar - Software Developer with 2+ years of experience in Flutter, Laravel, and Firebase">
+  <title>Rizwan N Sayyednavar - Software Developer Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    body {
-      background-color: #f9f9f9;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    .section {
-      padding: 60px 0;
-    }
-    .skills-grid, .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .skills-grid div, .project {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .skills-grid div:hover, .project:hover {
-      transform: translateY(-5px);
-    }
-    .social-links a {
-      margin: 0 10px;
-      font-size: 1.2rem;
-      color: #ecf0f1;
-      transition: color 0.3s;
-    }
-    .social-links a:hover {
-      color: #E74C3C;
-    }
-    .footer {
-      background: #2C3E50;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 40px;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Dark Mode Toggle -->
-  <div class="dark-mode-toggle">
-    <label>
-      <input type="checkbox" id="darkMode">
-      <span>Dark Mode</span>
-    </label>
-  </div>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content" data-aos="fade-down">
-      <h1>Rizwan N Sayyednavar</h1>
-      <p>Software Developer | Mobile & Web Solutions | Problem Solver</p>
-      <a href="assets/pdfs/Rizwan-N-Sayyednavar-Resume.pdf" class="btn" download>Download Resume</a>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/rizwansayyednavar" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://rizwansayyed786.github.io/portfolio/" target="_blank"><i class="fas fa-globe"></i></a>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Rizwan</a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-toggle">
+        <div class="dark-mode-toggle">
+          <label class="switch">
+            <input type="checkbox" id="darkMode">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
-  </header>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content" data-aos="fade-up">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="greeting">Hi, I'm</span>
+            <span class="name">Rizwan N Sayyednavar</span>
+          </h1>
+          <p class="hero-subtitle">Software Developer</p>
+          <p class="hero-description">
+            Over 2 years of professional experience in building and deploying mobile and web applications using Flutter, Laravel, and Firebase.
+          </p>
+          <div class="hero-buttons">
+            <a href="assets/resume.pdf" class="btn btn-primary" download>
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+          </div>
+          <div class="hero-social">
+            <a href="https://www.linkedin.com/in/rizwansayyednavar" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/rizwansayyed786" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:mh.rizwan582@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <a href="#about"><i class="fas fa-chevron-down"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info Bar -->
+  <section class="contact-bar">
+    <div class="container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:mh.rizwan582@gmail.com">mh.rizwan582@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+917338614460">+91 7338614460</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Dharwad, Karnataka, India</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- About Section -->
-  <section id="about" class="section" data-aos="fade-up">
+  <section id="about" class="section">
     <div class="container">
-      <h2>About Me</h2>
-      <p>
-        Software Developer with 2+ years of experience building high-quality mobile and web apps. Skilled in Flutter, Laravel, and modern tech stacks. Passionate about clean code, performance optimization, and solving business problems with efficient solutions.
-      </p>
+      <h2 class="section-title" data-aos="fade-up">Profile</h2>
+      <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+        <div class="about-card">
+          <p class="about-text">
+            Software Developer over <strong>2 years</strong> of professional experience in building and deploying mobile and web applications using Flutter, Laravel, and Firebase. Adept at developing scalable, user-centric, and high-performance systems. Strong problem-solving skills, quick adaptability, and a passion for writing clean, maintainable, and efficient code aligned with business goals.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Education Section -->
-  <section id="education" class="section bg-light" data-aos="fade-up">
+  <section id="education" class="section bg-light">
     <div class="container">
-      <h2>Education</h2>
-      <p><strong>KLE Technological University</strong>, BE (CGPA: 8.97)</p>
-      <p>Graduation Year: 2019, Hubli, Karnataka</p>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section" data-aos="fade-up">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div><i class="fas fa-code"></i> Dart, Flutter, PHP (Laravel)</div>
-        <div><i class="fas fa-database"></i> MySQL, Firebase, Firestore</div>
-        <div><i class="fas fa-code"></i> React JS, HTML, CSS, JavaScript</div>
-        <div><i class="fas fa-laptop-code"></i> Python, C++</div>
-        <div><i class="fas fa-cogs"></i> REST APIs, State Management (Provider, Riverpod, MVVM)</div>
-        <div><i class="fas fa-tools"></i> Git, GitHub</div>
+      <h2 class="section-title" data-aos="fade-up">Education</h2>
+      <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="education-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="education-content">
+          <h3>KLE Technological University</h3>
+          <p class="education-degree">Bachelor of Engineering (BE)</p>
+          <p class="education-details">
+            <span class="cgpa"><i class="fas fa-star"></i> CGPA: 8.97</span>
+            <span class="period"><i class="fas fa-calendar"></i> 2019 – 2023</span>
+            <span class="location"><i class="fas fa-map-marker-alt"></i> Hubli, Karnataka</span>
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Experience Section -->
-  <section id="experience" class="section bg-light" data-aos="fade-up">
+  <section id="experience" class="section">
     <div class="container">
-      <h2>Experience</h2>
-      <div>
-        <h3>Software Engineer, Chromosis Technologies PVT LTD</h3>
-        <p><em>Jan 2023 - Present | Hubli-Dharwad, India</em></p>
-        <ul>
-          <li>Developed 5+ robust mobile/backend systems with 99% uptime.</li>
-          <li>Integrated Plaid & Firebase in finance/vehicle registration apps with 1,000+ active users.</li>
-          <li>Shipped 4–5 production-ready apps to App Store & Play Store.</li>
-          <li>Boosted multilingual support using Flutter localization in 3+ apps.</li>
-          <li>Mentored juniors, conducted code reviews, and led client communications.</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Backend Developer Intern, Quantum IT Innovation</h3>
-        <p><em>Oct 2022 - Dec 2022 | Noida, India</em></p>
-        <ul>
-          <li>Built scalable APIs using Laravel & MySQL for client projects.</li>
-          <li>Optimized SQL queries & database design for improved performance.</li>
-        </ul>
+      <h2 class="section-title" data-aos="fade-up">Experience</h2>
+      <div class="timeline" data-aos="fade-up" data-aos-delay="100">
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="experience-header">
+              <h3>Flutter Developer</h3>
+              <span class="company">Applaunch.io</span>
+            </div>
+            <p class="experience-period">
+              <i class="fas fa-calendar"></i> July 2025 | <i class="fas fa-map-marker-alt"></i> Bangalore
+            </p>
+            <ul class="experience-list">
+              <li><i class="fas fa-check-circle"></i> Developed Emergency Rescue App with voice assistant integration (Speech-to-Text, Text-to-Speech), Google Maps, and Firebase Cloud Messaging.</li>
+              <li><i class="fas fa-check-circle"></i> Implemented subscription-based model and in-app purchases for premium and course access.</li>
+              <li><i class="fas fa-check-circle"></i> Used Clean Architecture, GetX, and Provider for state management and modular design.</li>
+              <li><i class="fas fa-check-circle"></i> Improved app performance and user experience through optimized code and testing.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="experience-header">
+              <h3>Software Engineer</h3>
+              <span class="company">Chromosis Technologies PVT LTD</span>
+            </div>
+            <p class="experience-period">
+              <i class="fas fa-calendar"></i> June 2023 – 2025 | <i class="fas fa-map-marker-alt"></i> Hubli-Dharwad, India
+            </p>
+            <p class="tech-stack"><strong>Tech Stack:</strong> Flutter, Dart, Laravel, PHP, MySQL, Firebase, ReactJs, Hive</p>
+            <ul class="experience-list">
+              <li><i class="fas fa-check-circle"></i> Developed and maintained <strong>5+</strong> moderately complex mobile and backend systems, ensuring <strong>99% uptime</strong> and enhanced scalability.</li>
+              <li><i class="fas fa-check-circle"></i> Built and deployed secure features for finance and vehicle registration apps, serving <strong>1,000+ active users</strong> with third-party integrations (Plaid, Firebase).</li>
+              <li><i class="fas fa-check-circle"></i> Developed VoIP calling features for iOS applications, resulting in a <strong>30% increase</strong> in in-app user engagement.</li>
+              <li><i class="fas fa-check-circle"></i> Released <strong>4–5 production-ready</strong> mobile apps on the App Store and Play Store and successfully deployed production web applications.</li>
+              <li><i class="fas fa-check-circle"></i> Enhanced multilingual support across apps and web platforms, covering <strong>3+ languages</strong> using localization techniques.</li>
+              <li><i class="fas fa-check-circle"></i> Collaborated closely with clients across <strong>3+ projects</strong> to gather requirements and deliver robust, business-driven technical solutions.</li>
+              <li><i class="fas fa-check-circle"></i> Led code reviews and mentored <strong>2–3 junior team members</strong>, improving team coding standards and delivery timelines.</li>
+              <li><i class="fas fa-check-circle"></i> Identified and resolved critical performance bottlenecks, improving system response time by <strong>25%</strong> and boosting scalability for future growth.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="experience-header">
+              <h3>Internship</h3>
+              <span class="company">Quantum IT Innovation</span>
+            </div>
+            <p class="experience-period">
+              <i class="fas fa-calendar"></i> October 2022 - December 2022 | <i class="fas fa-map-marker-alt"></i> Noida, India
+            </p>
+            <ul class="experience-list">
+              <li><i class="fas fa-check-circle"></i> Built and maintained scalable backend APIs using Laravel and MySQL to support client-facing web and mobile applications.</li>
+              <li><i class="fas fa-check-circle"></i> Designed efficient database schemas and optimized SQL queries to improve system performance and scalability.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section" data-aos="fade-up">
+  <!-- Skills Section -->
+  <section id="skills" class="section bg-light">
     <div class="container">
-      <h2>Projects</h2>
+      <h2 class="section-title" data-aos="fade-up">Skills</h2>
+      
+      <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="category-title"><i class="fas fa-code"></i> Languages & Frameworks</h3>
+        <div class="skills-grid">
+          <div class="skill-item">Dart</div>
+          <div class="skill-item">Flutter</div>
+          <div class="skill-item">React JS</div>
+          <div class="skill-item">PHP (Laravel)</div>
+          <div class="skill-item">Python</div>
+          <div class="skill-item">C++</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">HTML</div>
+          <div class="skill-item">CSS</div>
+        </div>
+      </div>
+
+      <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="category-title"><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+        <div class="skills-grid">
+          <div class="skill-item">State Management (Provider, Riverpod, MVVM)</div>
+          <div class="skill-item">Firebase</div>
+          <div class="skill-item">REST APIs</div>
+          <div class="skill-item">Google Maps</div>
+        </div>
+      </div>
+
+      <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="category-title"><i class="fas fa-server"></i> Backend & Databases</h3>
+        <div class="skills-grid">
+          <div class="skill-item">MySQL</div>
+          <div class="skill-item">NoSQL</div>
+          <div class="skill-item">Firebase Firestore</div>
+          <div class="skill-item">Laravel</div>
+        </div>
+      </div>
+
+      <div class="skills-category" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="category-title"><i class="fas fa-tools"></i> Version Control & DevOps</h3>
+        <div class="skills-grid">
+          <div class="skill-item">Git</div>
+          <div class="skill-item">GitHub</div>
+        </div>
+      </div>
+
+      <div class="skills-category" data-aos="fade-up" data-aos-delay="500">
+        <h3 class="category-title"><i class="fas fa-brain"></i> Other</h3>
+        <div class="skills-grid">
+          <div class="skill-item">Machine Learning</div>
+          <div class="skill-item">Data Structures & Algorithms (DSA)</div>
+          <div class="skill-item">OOPs</div>
+        </div>
+      </div>
+
+      <div class="skills-category" data-aos="fade-up" data-aos-delay="600">
+        <h3 class="category-title"><i class="fas fa-user-friends"></i> Soft Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-item">Problem-Solving & Debugging</div>
+          <div class="skill-item">Adaptability & Learning Mindset</div>
+          <div class="skill-item">Communication</div>
+          <div class="skill-item">Leadership</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Projects</h2>
       <div class="projects-grid">
         
-        <div class="project" data-aos="zoom-in">
-        <a href="https://play.google.com/store/apps/details?id=com.moneywellth.moneywellthapp&hl=en_IN" target="_blank">
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="project-icon">
+            <i class="fas fa-money-bill-wave"></i>
+          </div>
           <h3>Personal Finance App and Web</h3>
-          <p>Cross-platform app with Plaid integration for transaction tracking and financial planning.</p>
-        </a>
-        </div>
-        <div class="project" data-aos="zoom-in">
-          <a href="https://apps.apple.com/gb/app/fernox/id6615081080" target="_blank"> 
-            <h3>Water Quality Testing App and Web</h3>
-            <p>Mobile app supporting 3+ languages for testing and reporting water quality data.</p>
+          <p>Cross-platform app with Plaid integration for transaction tracking and financial planning. Subscription-based model with in-app purchases.</p>
+          <div class="project-tech">
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>Plaid</span>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.moneywellth.moneywellthapp&hl=en_IN" target="_blank" class="project-link">
+            View Project <i class="fas fa-arrow-right"></i>
           </a>
         </div>
-        <div class="project" data-aos="zoom-in">
-            <a href="https://play.google.com/store/apps/details?id=com.viveapp.app" target="_blank">
-                <h3>Connecting Drivers App and Web</h3>
-                <p>Qr based vehicle registration and chat application and voip calling functionalities to support communication between Drivers</p>
-            </a>
-            </div>
+
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="project-icon">
+            <i class="fas fa-tint"></i>
+          </div>
+          <h3>Water Quality Testing App and Web</h3>
+          <p>Mobile app supporting 3+ languages for testing and reporting water quality data with multilingual support.</p>
+          <div class="project-tech">
+            <span>Flutter</span>
+            <span>Laravel</span>
+            <span>Multilingual</span>
+          </div>
+          <a href="https://apps.apple.com/gb/app/fernox/id6615081080" target="_blank" class="project-link">
+            View Project <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="project-icon">
+            <i class="fas fa-car"></i>
+          </div>
+          <h3>Connecting Drivers App and Web</h3>
+          <p>QR-based vehicle registration and chat application with VoIP calling functionalities to support communication between drivers.</p>
+          <div class="project-tech">
+            <span>Flutter</span>
+            <span>VoIP</span>
+            <span>Firebase</span>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.viveapp.app" target="_blank" class="project-link">
+            View Project <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="project-icon">
+            <i class="fas fa-ambulance"></i>
+          </div>
+          <h3>Emergency Rescue App</h3>
+          <p>Rescue application with voice assistant integration (Speech-to-Text, Text-to-Speech), Google Maps, and Firebase Cloud Messaging.</p>
+          <div class="project-tech">
+            <span>Flutter</span>
+            <span>Google Maps</span>
+            <span>Voice AI</span>
+          </div>
+          <a href="#" class="project-link">
+            View Project <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- Certificates Section -->
-  <section id="certificates" class="section bg-light" data-aos="fade-up">
+  <section id="certificates" class="section bg-light">
     <div class="container">
-      <h2>Certifications</h2>
-      <ul>
-        <li><a href="https://www.hackerrank.com/certificates/2888c47e1294" target="_blank">Python (Basic) – HackerRank</a></li>
-        <li><a href="https://www.hackerrank.com/certificates/7ce528fe7226" target="_blank">Problem Solving (Basic) – HackerRank</a></li>
-        <li><a href="https://www.coursera.org/account/accomplishments/certificate/46JCWXYKXYES" target="_blank">Python Data Structures – Coursera</a></li>
-        <li><a href="https://www.coursera.org/account/accomplishments/certificate/TBQC29YLD3GX" target="_blank">Unsupervised Machine Learning – IBM/Coursera</a></li>
-      </ul>
+      <h2 class="section-title" data-aos="fade-up">Certificates</h2>
+      <div class="certificates-grid">
+        <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="certificate-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3>Python (Basic)</h3>
+          <p>HackerRank</p>
+          <a href="https://www.hackerrank.com/certificates/2888c47e1294" target="_blank" class="certificate-link">
+            View Certificate <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="certificate-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>Problem Solving (Basic)</h3>
+          <p>HackerRank</p>
+          <a href="https://www.hackerrank.com/certificates/7ce528fe7226" target="_blank" class="certificate-link">
+            View Certificate <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="certificate-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="certificate-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Python Data Structures</h3>
+          <p>Coursera</p>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/46JCWXYKXYES" target="_blank" class="certificate-link">
+            View Certificate <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="certificate-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="certificate-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>Unsupervised Machine Learning</h3>
+          <p>IBM Skills / Coursera</p>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/TBQC29YLD3GX" target="_blank" class="certificate-link">
+            View Certificate <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages Section -->
+  <section id="languages" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Languages</h2>
+      <div class="languages-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="language-item">
+          <i class="fas fa-language"></i>
+          <span>Hindi</span>
+        </div>
+        <div class="language-item">
+          <i class="fas fa-language"></i>
+          <span>English</span>
+        </div>
+        <div class="language-item">
+          <i class="fas fa-language"></i>
+          <span>Kannada</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+      <div class="contact-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email</h3>
+          <a href="mailto:mh.rizwan582@gmail.com">mh.rizwan582@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>Phone</h3>
+          <a href="tel:+917338614460">+91 7338614460</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Location</h3>
+          <p>Dharwad, Karnataka, India</p>
+        </div>
+      </div>
+      <div class="contact-social" data-aos="fade-up" data-aos-delay="200">
+        <a href="https://www.linkedin.com/in/rizwansayyednavar" target="_blank" class="social-btn">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/rizwansayyed786" target="_blank" class="social-btn">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 Rizwan N Sayyednavar. All Rights Reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Rizwan N Sayyednavar. All Rights Reserved.</p>
+      <p class="footer-subtext">Built with passion for clean code and great user experiences</p>
+    </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="js/scripts.js"></script>
   <script>
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ 
+      duration: 1000, 
+      once: true,
+      offset: 100
+    });
   </script>
 </body>
 </html>
